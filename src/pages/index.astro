@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Layout from '../layouts/BlogPost.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+	<Layout
+		title="Hello, I am Jordi Sicart"
+		description="Jordi Sicart on JavaScript"
+		pubDate={new Date('2023-12-04')}
+	>
+		<p>
+			Chief Technical Officer at Riaktr, I'm passionate about everything that makes our codebases reliable, readable and fast to ship. After more than 20 years in the industry, I love the JavaScript language and ecosystem.
+		</p>
+
+		<p>
+			You will find here some thoughts about web development, software engineering practices and JavaScript in particular.
+		</p>
+	</Layout>
+	</body>
+</html>

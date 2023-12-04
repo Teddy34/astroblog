@@ -5,7 +5,7 @@ pubDate: "2023-12-05"
 heroImage:  "/3monkeys.jpg"
 ---
 
-I discovered unit testing in 2003, under the guidance of a [great tech lead](https://www.linkedin.com/in/bernard-roubaud-8246b33/). I understood the value but it was hard for me to find the correct way to implement them and convince colleagues to get into it. The turning point for me was the [Survival Guide for Legacy Code talk in EVE Online Fanfest 2015](https://www.youtube.com/watch?v=JCR9q1MMO2E&pp=ygUWZXZlIG9ubGluZSBsZWdhY3kgY29kZQ%3D%3D). A tl;dr version of the talk could be a quote from Micheal Feathers: "Legacy Code is code without tests". It took me a couple of years of practice, but I finally reached a point where I could get a high coverage in my codebases with high support from the team. I hope that these few lines will help you get there faster than me.
+I discovered unit testing in 2003, under the guidance of a [great tech lead](https://www.linkedin.com/in/bernard-roubaud-8246b33/). I understood the value but it was hard for me to find the correct way to implement them and convince colleagues to get into it. The turning point for me was the [Survival Guide for Legacy Code talk in EVE Online Fanfest 2015](https://www.youtube.com/watch?v=JCR9q1MMO2E). A tl;dr version of the talk could be a quote from Micheal Feathers: "Legacy Code is code without tests". It took me a couple of years of practice, but I finally reached a point where I could get a high coverage in my codebases with high support from the team. I hope that these few lines will help you get there faster than me.
 
 ## Are unit tests worth it?
 
@@ -150,10 +150,15 @@ describe('AppCenterUtils', () => {
 
 Seeing a unit test like that allows me to focus on just a few possible mistakes in the code. The test's clarity, conveyed through concise descriptions, directs my attention to specific areas, making the review process more efficient and effective.
 
-## Practical guide to improve your unit-tests
+## Closing thoughts
 
-So this is a lot of theory. In pr
-Let's summarise everything into a small list of action items
+Ultimately, the key lies in the feedback loop. While some view unit tests as a costly defense against regressions, refining the methodology enhances the quality of the code as well as educates developers. This improves the efficiency and value of unit tests to initiate a virtuous cycle.
+
+My personal experience, as well as that of my teammates, has been transformative. Witnessing the positive impact, many have carried this practice into their next adventure.
+
+Are you ready to give it a try?
+
+## tl;dr
 
 - follow a test writing pattern like AAA.
 - isolate your logic within (pure) functions. Prioritize extensive testing of these functions, deferring integration testing to a later stage. 
@@ -161,7 +166,3 @@ Let's summarise everything into a small list of action items
 - only test the use cases that you need.
 - use the tests to reflect on your code architecture.
 - If you collapse all the test content, it should be understandable and helpful.
-
-## Closing thoughts
-
-After some years of 

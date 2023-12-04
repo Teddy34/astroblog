@@ -87,13 +87,13 @@ Writing a lot of tests should naturally prompt developers to reevaluate their co
 It becomes evident that certain aspects pose challenges to testing, such as asynchronous behaviors, intricate internal states, complex dependencies, and heavy branching logic. Ironically, the most intricate and fragile code segments tend to be the ones initially exempted from testing. This paradox highlights the need for a shift in approach, emphasizing comprehensive testing for the most complex components.
 
 
-Simplifying the testing process involves leveraging a powerful tool from the arsenal of Functional Programming: the adoption of pure functions. As outlined in detail in the blog post (https://codingwithjs.rocks/blog/fp-the-good-parts), pure functions play a crucial role in simplifying code structure and enhancing testability.
+Simplifying the testing process involves leveraging a powerful tool from the arsenal of Functional Programming: the adoption of pure functions. As outlined in detail in the [blog post](https://codingwithjs.rocks/blog/fp-the-good-parts), pure functions play a crucial role in simplifying code structure and enhancing testability.
 
 By extracting business logic and focusing extensive testing efforts on pure functions, you set a high coverage target for these components. In contrast, for impure code sections, a lower coverage target suffices. This approach not only streamlines the testing process but also promotes code clarity and maintainability.
 
 Strategies such as minimizing the number of arguments, reducing cyclomatic complexity, and eliminating for-loops with their associated counters contribute significantly to code simplicity.
 
-By embracing pattern matching, as explored in the blog post (https://codingwithjs.rocks/blog/better-branching-with-lodash-cond), you can effectively streamline branching logic, making code more readable and less prone to errors.
+By embracing pattern matching, as explored in the [blog post](https://codingwithjs.rocks/blog/better-branching-with-lodash-cond), you can effectively streamline branching logic, making code more readable and less prone to errors.
 
 The act of writing code with testability in mind not only benefits the test developers but, more importantly, elevates the overall code quality. As you delve deeper into this approach, it prompts a natural questioning of function requirements, fostering a continuous cycle of refinement and improvement.
 

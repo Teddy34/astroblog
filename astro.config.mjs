@@ -9,13 +9,13 @@ export default defineConfig({
 	integrations: [mdx(), sitemap()],
 	redirects: {
 		// keep compatibility to links to old blogs (social media, search engine etc.)
-		'/blog/redux-selector-colocation-in-practice': 'redux_colocation',
-		'/blog/angular-js-migration-war-story': 'angularjs_to_react',
-		'/blog/the-hidden-power-of-promise-resolve': 'promise_resolve',
-		'/blog/fp-the-good-parts': 'fp_good_parts',
-		'/blog/lodash-fp-usage-retrospective': 'lodash_fp_retro',
-		'/blog/great-graph-ql-tools': 'graphql_tools',
-		'/blog/the-only-time-i-use-var': 'using_var',
-		'/blog/better-branching-with-lodash-cond': 'cond'
+		'/blog/redux-selector-colocation-in-practice': '/blog/redux_colocation',
+		'/blog/angular-js-migration-war-story': '/blog/angularjs_to_react',
+		'/blog/the-hidden-power-of-promise-resolve': '/blog/promise_resolve',
+		'/blog/fp-the-good-parts': '/blog/fp_good_parts',
+		'/blog/lodash-fp-usage-retrospective': '/blog/lodash_fp_retro',
+		'/blog/great-graph-ql-tools': '/blog/graphql_tools',
+		'/blog/the-only-time-i-use-var': '/blog/using_var',
+		'/blog/better-branching-with-lodash-cond': '/blog/cond'
 	},
 });
